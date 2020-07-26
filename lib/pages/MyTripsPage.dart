@@ -13,28 +13,31 @@ class _MyTripsPageState extends State<MyTripsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: layoutWidgets.appBar(context, 'My Trips', true),
-      // body: ListView.builder(
-      //     itemCount: 50,
-      //     itemBuilder: (BuildContext context, int index) {
-      //       return ListTile(
-      //         title: Text("Hello"),
-      //         leading: Container(
-      //           width: 100,
-      //           height: 100,
-      //           child: ClipRRect(
-      //             borderRadius: BorderRadius.circular(16.0),
-      //             child: Image.network(
-      //                 'https://media.timeout.com/images/105242410/630/472/image.jpg'),
-      //           ),
-      //         ),
-      //         trailing: Icon(TSIcons.foward),
-      //         subtitle: Text(
-      //           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac ipsum metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac ipsum metus.",
-      //           maxLines: 2,
-      //           overflow: TextOverflow.ellipsis,
-      //         ),
-      //       );
-      //     }),
+      body: ListView.builder(
+          itemCount: 50,
+          itemBuilder: (BuildContext context, int index) {
+            int i = index + 1;
+            return ListTile(
+              title: Text("My Trip $i"),
+              leading: Container(
+                width: 50,
+                height: 50,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(100.0),
+                  child: Image.network(
+                    'https://media.timeout.com/images/105242410/630/472/image.jpg',
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              trailing: Icon(TSIcons.foward),
+              subtitle: Text(
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac ipsum metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac ipsum metus.",
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+            );
+          }),
       floatingActionButton:
           appWidgets.floatingActionButton(context, "New Trip", TSIcons.add),
     );
