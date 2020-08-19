@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travelSrilanka/ui_components/icons/TSIcons.dart';
+import 'package:travelSrilanka/widgets/widgets.dart';
 import 'package:travelSrilanka/ui_components/util/AppWidgets.dart';
 import 'package:travelSrilanka/ui_components/util/layoutWidgets.dart';
 
@@ -63,7 +64,7 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(
                           height: 10,
                         ),
-                        appWidgets.searchBar(context),
+                        SearchBarWidget(),
                       ],
                     ),
                   ),
@@ -76,7 +77,9 @@ class _HomePageState extends State<HomePage> {
                   children: <Widget>[
                     Row(
                       children: <Widget>[
-                        appWidgets.textTitle("Upcoming Trips"),
+                        TitleTextWidget(
+                          title: "Upcomming Trips",
+                        ),
                         Spacer(),
                         IconButton(
                           icon: Icon(TSIcons.foward),
@@ -87,7 +90,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Row(
                       children: <Widget>[
-                        appWidgets.textTitle("Trending Locations"),
+                        TitleTextWidget(
+                          title: "Trending Locations",
+                        ),
                         Spacer(),
                         IconButton(
                           icon: Icon(TSIcons.foward),
@@ -98,7 +103,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Row(
                       children: <Widget>[
-                        appWidgets.textTitle("Trending Cities"),
+                        TitleTextWidget(
+                          title: "Trending Cities",
+                        ),
                         Spacer(),
                         IconButton(
                           icon: Icon(TSIcons.foward),
@@ -109,7 +116,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Row(
                       children: <Widget>[
-                        appWidgets.textTitle("Popular Tags"),
+                        TitleTextWidget(
+                          title: "Polular Tags",
+                        ),
                         Spacer(),
                         IconButton(
                           icon: Icon(TSIcons.foward),
