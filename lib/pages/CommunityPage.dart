@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:travelSrilanka/pages/CommunityPages/CommunityFeedPage.dart';
 import 'package:travelSrilanka/pages/CommunityPages/CommunityProfilePage.dart';
 import 'package:travelSrilanka/ui_components/icons/TSIcons.dart';
-import 'package:travelSrilanka/ui_components/util/AppWidgets.dart';
 import 'package:travelSrilanka/ui_components/util/layoutWidgets.dart';
 import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
+import 'package:travelSrilanka/widgets/widget_app_bar.dart';
 
 class CommunityPage extends StatefulWidget {
   @override
@@ -39,8 +39,7 @@ class _CommunityPageState extends State<CommunityPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: layoutWidgets.appBar(context, 'Community', true,
-          tabController: _tabController, tab_list: tabs),
+      appBar: layoutWidgets.appBar(context, 'Community', false),
       // body: TabBarView(
       //     controller: _tabController,
       //     children: tabs.map((Tab tab) {

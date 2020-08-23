@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:travelSrilanka/ui_components/icons/TSIcons.dart';
-import 'package:travelSrilanka/ui_components/util/AppWidgets.dart';
 import 'package:travelSrilanka/ui_components/util/layoutWidgets.dart';
 import 'package:travelSrilanka/widgets/widgets.dart';
 

@@ -6,7 +6,7 @@ import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
 class LayoutWidgets {
   bool isDark = false;
 
-  Widget appBar(BuildContext context, String title, bool isCOlored,
+  Widget appBar(BuildContext context, String title, bool isColored,
       {TabController tabController, List<Tab> tab_list}) {
     return AppBar(
       title: Text(
